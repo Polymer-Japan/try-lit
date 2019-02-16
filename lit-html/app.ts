@@ -1,7 +1,10 @@
-import {html, render} from 'lit-html';
+import { html, render } from 'lit-html'
+import { asyncReplace } from 'lit-html/directives/async-replace'
 
 const myTemplate = html`
-  <div>Hello World</div>
-`;
+	${asyncReplace(async () => {
+		const redit = await fetch('https://www.reddit.com/r/javascript.json')
+	})}
+`
 
-render(myTemplate, document.body);
+render(myTemplate, document.body)
