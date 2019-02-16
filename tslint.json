@@ -1,5 +1,5 @@
 {
-	"extends": ["tslint-xo", "tslint-immutable/all", "tslint-config-prettier"],
+	"extends": ["tslint-xo", "tslint-config-prettier"],
 	"rulesDirectory": ["tslint-plugin-prettier"],
 	"rules": {
 		"prettier": true
