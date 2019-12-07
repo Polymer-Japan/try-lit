@@ -4,6 +4,7 @@
   "description": "Try lit-html and LitElement now",
   "scripts": {
     "start": "parcel",
+    "lint": "eslint . --ext .ts --fix --ignore-pattern node_mobules/",
     "format": "prettier --write '**/*.{json,md}'"
   },
   "dependencies": {

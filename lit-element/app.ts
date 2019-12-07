@@ -1,24 +1,24 @@
 import {
-	LitElement,
-	html,
-	customElement,
-	property,
-	TemplateResult
-} from 'lit-element'
+  LitElement,
+  html,
+  customElement,
+  property,
+  TemplateResult
+} from "lit-element";
 
-@customElement('my-element')
+@customElement("my-element")
 export class MyElement extends LitElement {
-	@property()
-	foo: string
+  @property()
+  foo: string;
 
-	constructor() {
-		super()
-		this.foo = 'foo'
-	}
+  constructor() {
+    super();
+    this.foo = "foo";
+  }
 
-	render(): TemplateResult {
-		return html`
-			<p>${this.foo}</p>
-		`
-	}
+  render(): TemplateResult {
+    return html`
+      <p>${this.foo}</p>
+    `;
+  }
 }
