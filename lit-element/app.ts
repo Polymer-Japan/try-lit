@@ -4,16 +4,16 @@ import {
   customElement,
   property,
   TemplateResult
-} from 'lit-element';
+} from "lit-element";
 
-@customElement('my-element')
+@customElement("my-element")
 export class MyElement extends LitElement {
   @property()
   foo: string;
 
   constructor() {
     super();
-    this.foo = 'foo';
+    this.foo = "foo";
   }
 
   render(): TemplateResult {
